@@ -11,19 +11,19 @@ We expect you to have some programming experience and are familiar with at least
 - Rust standard libraries;
 - Rust crates.
 
-First, you will complete a few short exercises to get used to reading and writing Rust code.
 Then you will finish simple tasks in the codebase we provide. We divide the project into several sub-projects. This is the first part of the project.
 If you are already familiar with Rust, this simple assignment will take less than 30 minutes!
 
 In this course project, you will build a simplified Bitcoin client. The client's goal is not to run in the Bitcoin mainnet or any public testnet. Instead, the goal is to run it inside your team and let you have fun with it. You have plenty of freedom in designing and implementing this project.
 
 ## Repository management and submission:
-1. This repo provides the codebase for assignments. Please make a new **private** repo, e.g. hebbarashwin/COS-ECE470-fa2023 (Please do not change the name of the repo). Import code from https://github.com/Blockchains-Princeton/COS-ECE470-fa2023.git.
-2. You can run tests (by command `cargo test`) provided in the code to check the validity of their implementation. However, passing these tests doesn't guarantee to get full grades. 
-3. Push to your GitHub repo's **main** branch (Please use `gitignore` file to avoid pushing unnecessary files!), and click `Code -> Download ZIP' on GitHub to download a zip file. **Avoid zipping your code on your computer since the directories or files on your computer may cause an error for auto-grading.**
-4. Before submitting your code, you can double-check by running the auto-grading script we provide to make sure we can auto-grade your code. (Details below.) 
-5. Rename it to your netid as `netid.zip`. Upload the zip file on canvas. Please ensure that the file size <2MB.
-6. TAs will put additional tests (private) to the auto-grader and run them to award marks.
+1. You can work on the project in groups of 2 or 3. Only one submission per group. Please list your netids in [netids.txt](../netids.txt)
+2. This repo provides the codebase for assignments. Please make a new **private** repo, e.g. hebbarashwin/COS-ECE470-fa2023 (Please do not change the name of the repo). Import code from https://github.com/Blockchains-Princeton/COS-ECE470-fa2023.git.
+3. You can run tests (by command `cargo test`) provided in the code to check the validity of their implementation. However, passing these tests doesn't guarantee to get full grades. 
+4. Push to your GitHub repo's **main** branch (Please use `gitignore` file to avoid pushing unnecessary files! Specifically, the `target` directory should not be pushed), and click `Code -> Download ZIP' on GitHub to download a zip file. **Avoid zipping your code on your computer since the directories or files on your computer may cause an error for auto-grading.**
+5. Before submitting your code, you can double-check by running the auto-grading script we provide to make sure we can auto-grade your code. (Details below.) 
+6. Rename it to `netid1_netid2_netid3.zip`. Upload the zip file on canvas. Please ensure that the file size <2MB.
+7. TAs will put additional tests (private) to the auto-grader and run them to award marks.
 
 ## Reading 
 Please refer to [Rust by example](https://doc.rust-lang.org/rust-by-example/) to learn Rust grammar.
@@ -34,12 +34,13 @@ For [Rust standard crate](https://doc.rust-lang.org/stable/std/), we recommend y
 
 You can learn about other public crates here: [https://docs.rs/](https://docs.rs/). A *crate* just means a library or a package and can be managed by Cargo. You will learn how to use the following crate:
 - [ring](https://docs.rs/ring/0.16.20/ring/), a cryptographic crate. Specifically, you need to learn how to do SHA256 hash.
+- [serde](https://docs.rs/serde/1.0.104/serde/) and [bincode](https://docs.rs/bincode/1.2.1/bincode/), serialization crates. Specifically, you need to learn how to encode an object into bytes.
 
 For these crates, their GitHub page or homepage may also be helpful. Feel free to read them.
 
 ## Warmup
 Please complete these short exercises from [rustlings](https://github.com/rust-lang/rustlings/tree/main) on the Rust playground.
-Once you pass all the tests, *copy your solution to the respective file in [rustlings_exercises](rustlings_exercises/)*. (No additional tests will be run for this warmup section during grading)
+Once you pass all the tests, *copy your solution to the respective file in [rustlings_exercises](../rustlings_exercises/)*. (No additional tests will be run for this warmup section during grading)
 
 1. [primitive_types4.rs](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=749f4b503a5d05e7d97c0a154cfef04d)
 2. [vecs2.rs](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=1106344268d03300cd8a0df63c056e4c)
@@ -113,7 +114,7 @@ Similar to the Unix double-checking auto-grader, we have provided `autograder_wi
 
 You need to install `python3` to run it.
 ## Submission
-Download the zip file of your repo on GitHub. Rename it to your netid as `netid.zip`. Upload the zip file on canvas. Please ensure that the file size is <2MB.
+Download the zip file of your repo on GitHub. Rename it to your netids as `netid1_netid2_netid3.zip`. Upload the zip file on canvas. Please ensure that the file size is <2MB.
 
 
 ## Advance Notice
