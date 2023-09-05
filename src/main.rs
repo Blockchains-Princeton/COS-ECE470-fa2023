@@ -7,6 +7,7 @@ pub mod blockchain;
 pub mod types;
 pub mod miner;
 pub mod network;
+pub mod generator;
 
 use blockchain::Blockchain;
 use clap::clap_app;

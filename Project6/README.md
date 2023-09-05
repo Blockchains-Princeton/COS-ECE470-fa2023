@@ -4,13 +4,13 @@ In this part of the project, we will combine the last 3 weeks' work to make a fu
 
 ## Repository management and submission
 
-1. Like the previous assignments, use GitHub and download the zip file. Rename it to your netid as `netid.zip`. Upload the zip file on canvas.
+1. Like the previous assignments, use GitHub and download the zip file. Rename it to your netids as `netid1_netid2_netid3.zip`. Upload the zip file on canvas.
 2. TAs will use autograder to run your code to award marks.
 
 ## Programming
 
 ### Checks
-Please add the following checks when processing a new block in *src/network/worker.rs*.
+Please add the following checks when processing a new block in *[src/network/worker.rs](../src/network/worker.rs)*.
 
 #### PoW validity check
 

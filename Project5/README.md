@@ -4,7 +4,7 @@ In this part, you will implement the **network** module of the Bitcoin client. T
 
 ## Repository management and submission
 
-1. Similar to the previous assignments, use GitHub and download zip file. Rename it to your netid as `netid.zip`. Upload the zip file on canvas.
+1. Similar to the previous assignments, use GitHub and download zip file. Rename it to your netids as `netid1_netid2_netid3.zip`. Upload the zip file on canvas.
 2. TAs will put additional tests (private) on the submission and run them to award marks.
 
 ## Code provided
