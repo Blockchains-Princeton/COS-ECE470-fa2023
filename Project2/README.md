@@ -3,7 +3,7 @@ In this assignment, you will implement some crypto-primitives and basic data str
 
 ## Repository management and submission:
 1. Similar to the previous assignment, you can continue to work on your GitHub repo. After pushing to your GitHub repo, click `Code -> Download ZIP' to download a zip file.
-2. Rename it to your netid as `netid.zip`. Upload the zip file on canvas. Please ensure that the file size <2MB.
+2. Rename it to your netid as `netid1_netid2_netid3.zip`. Upload the zip file on canvas. Please ensure that the file size <2MB.
 3. TAs will put additional tests (private) on the submission and run them to award marks.
 
 ## Code provided

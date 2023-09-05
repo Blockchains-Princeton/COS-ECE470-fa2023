@@ -4,7 +4,7 @@ In this part of the project, you will implement the **miner** module of the Bitc
 
 ## Repository management and submission
 
-1. Like the previous assignments, use GitHub and download the zip file. Rename it to your netid as `netid.zip`. Upload the zip file on canvas.
+1. Like the previous assignments, use GitHub and download the zip file. Rename it to your netid as `netid1_netid2_netid3.zip`. Upload the zip file on canvas.
 2. TAs will put additional tests (private) on the submission and run them to award marks.
 
 ## Code provided
