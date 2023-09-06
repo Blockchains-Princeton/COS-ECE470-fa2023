@@ -40,7 +40,7 @@ After you finish the programming, you can run `cargo test merkle_root` / `merkle
 We will auto-grade the program using tests similar to the ones mentioned above. We will not test edge cases. We encourage you to write your own test cases to ensure that your implementation is correct.
 
 ## Double check
-We have provided an (incomplete) auto-grader to test that your code format fits the auto-grader. However, passing this auto-grader doesn't guarantee to get full grades. For this assignment, put your netid.zip file with [autograder.sh](autograder.sh) and [add_test.py](add_test.py) in a new directory, from where run
+We have provided an (incomplete) auto-grader to test that your code format fits the auto-grader. However, passing this auto-grader doesn't guarantee to get full grades. For this assignment, put your netid1_netid2_netid3.zip file with [autograder.sh](autograder.sh) and [add_test.py](add_test.py) in a new directory, from where run
 ```
 bash autograder.sh
 ```
@@ -51,7 +51,7 @@ If you see "Code format wrong" on the screen, it may be due to changing these li
 If in _log.txt_ you cannot see the correct log; your zip file may have incorrect directories that prevents the auto-grader from compiling.
 
 ## Double check (windows)
-Similar to the Unix double-checking auto-grader, we have provided `autograder_windows.bat`. First, you need to unzip your netid.zip file manually and put the `COS-ECE470-fa2022-main` folder inside a folder named after your netid. Put the folder `your-netid` in the a new folder containing [autograder.sh](autograder.sh) and [add_test.py](add_test.py). Make sure that `Cargo.toml` and `src/` is in `your-netid/COS-ECE470-fa2022-main`. Then double click `autograder_windows.bat`, enter your netid as instructed, and the result will be shown in a cmd window.
+Similar to the Unix double-checking auto-grader, we have provided `autograder_windows.bat`. First, you need to unzip your netid1_netid2_netid3.zip file manually and put the `COS-ECE470-fa2023-main` folder inside a folder named after your netid. Put the folder `your-netid` in the a new folder containing [autograder.sh](autograder.sh) and [add_test.py](add_test.py). Make sure that `Cargo.toml` and `src/` is in `your-netid/COS-ECE470-fa2023-main`. Then double click `autograder_windows.bat`, enter your netid as instructed, and the result will be shown in a cmd window.
 
 You need to install `python3` to run it.
 
