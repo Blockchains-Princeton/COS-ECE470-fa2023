@@ -8,7 +8,7 @@ This part of the project will deal with including transactions in the codebase. 
 2. TAs will use autograder to run your code to award marks.
 
 ## Code provided
-No additional code will be provided for this assignment. **Notice: starting from project part 6, we won't use tests to do autograding, so it is okay to fail previous tests.**
+We have provided a starting code for the transaction generator *src/generator/generator.rs* . **Notice: starting from project part 6, we won't use tests to do autograding, so it is okay to fail previous tests.**
 
 ## Programming
 
@@ -130,7 +130,7 @@ We do not provide any script for this assignment. You can double-check by follow
 - *For this project, do we measure block size limit in bytes or in the number of transactions?* 
      - Block size limit is measured in the number of transactions.
 - *How should the transaction generator be implemented?* 
-     - To implement the transaction generator you can create a new folder called `generator` and have a `mod.rs` and `worker.rs` similar to the `miner` folder. The only difference would be that this code would generate transactions instead of blocks. In `main.rs`, this generator would share the same `server` as the miner and network worker.
+     - To implement the transaction generator you can create a new folder called `generator` and have a `mod.rs` and `worker.rs` similar to the `miner` folder. The only difference would be that this code would generate transactions instead of blocks. In `main.rs`, this generator would share the same `server` as the miner and network worker. Alternatively, you can use the provided codebase in *src/generator/generator.rs* ; the TransactionGenerator object can be directly passed to the api server which can call txgen.start(theta). 
 - *If the blockchains were in sync for the Part 6 but diverges in this part after the introduction of transaction generator, what might be the problem?* 
     - You can put print statements within the new code you added to see if a node is getting stuck somewhere (maybe waiting for a blockchain.lock() to be released). Make sure you are using `drop(mempool)` or `drop(blockchain)` if you are using a locked mempool or blockchain in your network worker, miner or transaction generator. Also start with just two nodes with one of them mining, would help you better in debugging. Decreasing the mining rate would also help debugging. You can also make the transaction rate slower by setting the variable `interval` in `thread::sleep(interval)` to be `theta*x` where `x` can be adjusted manually. Also, if many blocks in your longest chain are empty, then you can put a condition in the miner to mine a block only when at least one transction has been included in the block.
 - *If we remove transactions from the mempool then how do we prevent duplicate transactions?* 
